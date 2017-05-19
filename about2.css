@@ -1,0 +1,273 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+@font-face{
+	font-family: Poriet;
+	src:url(poriet.ttf);
+	font-weight: 100;
+}
+.dropbtn {
+   background-color:rgba(255, 255, 255, 0);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+	
+    padding: 12px 14px;
+    text-decoration: none;
+    display: block;
+	font-family:Poriet;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    
+}
+@keyframes end{
+	0%{transform:rotateZ(0deg);}
+	25%{transform:rotateZ(5deg);}
+	50%{transform:rotateZ(0deg);}
+	75%{transform:rotateZ(-5deg);}
+	100%{transform:rotateZ(0deg);}
+}
+#mainBody{
+	
+	height: 6500px;
+	background-color: #FFEB3B;
+	overflow-x:hidden;
+}
+@keyframes rotation{
+	0% {transform:rotateZ(0deg);}
+	10% {transform:rotateZ(10deg);}
+	20% {transform:rotateZ(15deg);}
+	30% {transform:rotateZ(0deg);}
+    100%{transform:rotateZ(360deg);}
+}
+@keyframes rotation2{
+	0% {transform:rotateZ(360deg);}
+	
+    100%{transform:rotateZ(0deg);}
+}
+#endingHead{
+	font-family: Poriet;
+	position:absolute;
+	bottom:-500px;
+	left:35%;
+	margin:auto;
+	opacity:0;
+	transition:opacity 5s;
+}
+.backCover1{
+	width:700px;
+	height:700px;
+	position:fixed;
+	margin-left:-200px;
+	margin-top:-50px;
+	opacity:0.9;
+	animation-name:rotation2;
+	animation-duration:200s;
+	animation-iteration-count:infinite;
+	
+}
+.backCover2{
+	width:400px;
+	height:400px;
+	position:fixed;
+	right:0px;
+	bottom:0px;
+
+	opacity:1;
+	animation-name:rotation2;
+	animation-duration:150s;
+	animation-iteration-count:infinite;
+	
+}
+#container{
+	opacity:0;
+	transition:opacity 1s ease-in;
+}
+#c1{
+	opacity:0;
+	transition:opacity 1s;
+}
+#c2{
+	opacity:0;
+	transition:opacity 1s;
+}
+#c3{
+	opacity:0;
+	transition:opacity 1s;
+}
+#c4{
+	opacity:0;
+	transition:opacity 1s;
+}
+#c5{
+	opacity:0;
+	transition:opacity 1s;
+}
+#introHead{
+	position: fixed;
+	top: 200px;
+	left: 60px;
+	font-size: 80px;
+	font-family: 'Dancing Script', cursive;
+	font-weight: normal;
+	color: #404040;
+	transition: left 2s ease-in;
+}
+.IntroBox{
+	
+	
+	transform:rotateZ(-15deg);margin-top:0px;margin-right:-200px;margin-left:-250px;
+	transition:transform	2s ;
+}
+#introPara{
+	position: fixed;
+	top: 300px;
+	left: 60px;
+	font-size: 30px;
+	font-weight: 100;
+	font-family: Poriet;
+	transition: left 2s ease-in;
+}
+
+.eventIntro{
+	position: relative;
+	margin: auto;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 800px;
+	height: 600px;
+	top: 400px;
+	display: inline-block;
+}
+#infoBox1{
+	background-color: rgba(255, 255, 255, 0.7);
+	height: 400px;
+	box-shadow: 10px 10px 28px rgba(212, 211, 206, 0.74)}
+#infoBox2{
+	
+}
+#infoBox3{
+	background-color: rgba(0, 0, 0, 0.76);
+	box-shadow: 10px 5px 28px rgba(80, 80, 80, 0.65);
+	height: 400px;
+}
+#infoBox4{
+	background-color: rgba(0, 0, 0, 0.36);
+	box-shadow: 10px 5px 28px rgba(43, 43, 43, 0.47);
+	height: 400px;
+}
+.boxHeading1{
+	display: block;
+	font-family: Poriet;
+	float: right;
+	margin-right: 20px;
+	margin-top: 10px;
+	font-size: 36px;
+	font-weight: 100;
+}
+.boxPara1{
+	font-family: Poriet;
+	width: 200px;
+	margin-top: 60px;
+	font-size: 24px;
+	font-weight: normal;
+}
+.circleContainer{
+	display: block;
+	position: relative;
+	z-index: 2;
+	top:-375px;		
+	width: 250px;
+	height:250px;
+	margin: auto;
+	mergin-right
+}
+#overView1{
+
+}
+
+
+.boxImage{
+	margin-left:-10px;
+	width: 250px;
+	height: 250px;
+	border-radius: 100%;
+	box-shadow: 5px 5px 28px rgba(29, 29, 29, 0.4);
+	border:5px outset rgba(255, 255, 255, 0.51);
+}
+.backBox{
+	display: block;
+	width: 1040px;
+	height: 502px;
+	position: relative;
+	margin: auto;
+	z-index: -1;
+
+}
+.backBox2{
+    margin: 5px;
+	width: 500px;
+	display: inline-block;
+	height: 250px;
+	background-color:rgba(0,0,0,0.65);
+	padding: -2px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,0.19);
+}
+.boxHeading2{
+	position: absolute;
+	font-family: Poriet;
+	font-size: 32px;
+	top:20px;
+	left:20px;
+	color:rgba(255, 255, 255, 0.72);
+	font-weight:100;
+}
+.boxPara2{
+	
+	position: absolute;
+	font-family: Poriet;
+	font-size:20px;
+	width: 374px;
+	top:65px;
+	margin-left:20px;
+	color:rgb(216, 216, 216);
+	font-weight:500;
+
+}
+#endingHead{
+	animation:end 0.35s infinite linear;
+
+}

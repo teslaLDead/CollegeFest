@@ -1,0 +1,38 @@
+.containerForm{
+	width:800px;
+	position:absolute;
+	left:50%;
+	margin-left:-400px;;
+	
+	height:600px;	
+	top:20px;
+	background-color:rgba(0, 0, 0, 0.81);
+	box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
+	
+}
+#userInfo{
+	width:100%;
+	position:relative;
+}
+#userInfo ul{
+	list-style:none;
+}
+#userInfo li{
+	display:inline;
+	margin-left:10px;
+}
+.inputTitle{
+	color:rgba(255, 255, 255, 0.77);
+	font-family:Poriet;
+	font-size:22px;
+	margin-top:-20px;
+	font-weight:400;
+	position:relative;
+	z-index:2;
+	top:60px;
+	left:25px;
+	display:block;
+	width:200px;
+	
+	
+}

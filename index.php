@@ -1,0 +1,69 @@
+<?php session_start();?>
+<!DOCTYPE html>
+<html lang="eng-US">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<!--<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="home_script.js"></script>
+    <link rel="shortcut icon" href="C:\Users\paritosh_kumar20\Desktop\college fest\images\circle.png">
+	<title>Coo!io</title>
+</head>
+<body id="body">
+<!--<img src="C:\Users\paritosh_kumar20\Desktop\backCover1.png" class="backCover1 special">
+<img src="C:\Users\paritosh_kumar20\Desktop\backCover2.png" class="backCover2 special">
+<img src="C:\Users\paritosh_kumar20\Desktop\backCover3.png" class="backCover3 ">-->
+<div id="outer_box">
+    <div id="inner_box">
+       <span onclick="logClose()" id="log_close_button"><img src="C:\Users\paritosh_kumar20\Desktop\college fest\images\circle2.png"></span>
+       <br><br>
+      <form style="padding:10px;">
+       <h3 style="color:white;text-align:center;font-family:Roboto;font-size:20px;margin:0px;">Login</h3>
+       <br>
+       <div style="width:100%;margin:0px;padding:0px;">
+       <input type="text" name="username" placeholder="User Name" autofocus required class="logIn">
+       </div>
+       <br>
+       <input type="password" name="logpass"  placeholder="Password" required class="logIn">
+       <br><br>
+      </form>
+    </div>
+  </div>
+<div id="nav">
+  <ul>
+  <li><a href="about2.html">About Us</a></li>
+  <li><a href="eventHome.html" onclick="lowBarMove()">Events</a></li>
+  <?php 
+  if (isset($_SESSION['id'])) 
+   { echo "<li style=\"float:right;margin-right:5px;\"><a href=\"profile.php\" >Profile</a></li>";
+    }else
+      {echo "<li style=\"float:right;margin-right:5px;\"><a href=\"singup.php\" >Register</a></li>";}
+  if (isset($_SESSION['id'])) 
+    {echo "<li style=\"float:right;margin-right:5px;\"><a href=\"logou.php\" >Logout</a></li>";}
+  else
+   { echo "<li style=\"float:right;margin-right:5px;\"><a href=\"login.php\" >Login</a></li>";}
+ 
+  ?>
+  </ul></div>
+<div id="centre">
+<div id="main_img">
+  <img src="image folder\123.jpg" id="img1" style="-webkit-filter: grayscale(100%); filter: grayscale(80%);width:1400px;margin-top:-30px;margin-left:-20px;">
+  <img src="image folder\asd.jpg" id="img2" style="-webkit-filter: grayscale(100%); filter: grayscale(100%);width:1400px;">
+  <img src="image folder\appdev.jpg" id="img3">
+  
+  </div> 
+<div id="title_main">
+ 
+  
+  <span id="shake1">C</span><span id="shake2">O</span><span id="shake3">O</span><span id="shake2">!</span><span id="shake1">i</span><span id="shake3">O</span>
+  <!--use color rgb(85, 146, 224) as a part of this heading || future-->
+ 
+  </div>
+</div>
+
+
+  
+
+</body>
+</html>

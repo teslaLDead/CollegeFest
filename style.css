@@ -1,0 +1,318 @@
+::-webkit-scrollbar { 
+    display: none; 
+}
+@keyframes shakeit1{
+	0% {font-size: 56px; width: 71px;height: 71px;}
+	25% {font-size: 54.5px; width: 72px;height: 72px;}
+	50%{font-size: 55px;width: 69px;height: 69px;}
+	75%{font-size: 54.5px; width: 70px;height: 70px;}
+    100%{font-size: 58px;width: 71px;height: 71px;}
+}
+@keyframes rotation{
+	0% {transform:rotateZ(0deg);}
+	
+    100%{transform:rotateZ(360deg);}
+}
+@keyframes rotation2{
+	0% {transform:rotateZ(360deg);}
+	
+    100%{transform:rotateZ(0deg);}
+}
+.backCover1{
+	position:absolute;
+	margin-left:400px;
+	margin-top:-50px;
+	opacity:0.8;
+	animation-name:rotation;
+	animation-duration:300s;
+	animation-iteration-count:infinite;
+}
+.backCover2{
+	
+	position:absolute;
+	margin-left:300px;
+	margin-top:-50px;
+	animation-name:rotation2;
+	animation-duration:200s;
+	animation-iteration-count:infinite;
+}
+.backCover3{
+	opacity:0.95;
+	position:absolute;
+	margin-left:280px;
+	margin-top:-100px;
+	 filter: sepia(100%);
+	  -webkit-filter: sepia(100%); /* Chrome, Safari, Opera */
+	  
+}
+
+@keyframes shakeit2{
+	0% {font-size: 55px; width: 70px;height: 70px;}
+	25% {font-size: 55.5px; width: 71px;height: 71px;}
+	50%{font-size: 56px;width: 68px;height: 68px;}
+	75%{font-size: 55px; width: 72px;height: 72px;}
+    100%{font-size: 56px;width: 70px;height: 70px;}
+}
+@keyframes shakeit3{
+	0% {font-size: 57px; width: 69px;height: 69px;}
+	25% {font-size: 56.5px; width: 70px;height: 70px;}
+	50%{font-size: 55.5px;width: 71px;height: 71px;}
+	75%{font-size: 56px; width: 72px;height: 72px;}
+    100%{font-size: 57px;width: 69px;height: 69px;}
+}
+@keyframes image12{
+	0%{opacity: 0;}
+	20%{opacity: 0;}
+	40%{opacity: 1}
+	60%{opacity: 1}
+	80%{opacity: 0}
+	100%{opacity: 0;}
+}
+@keyframes image23{
+	0%{opacity: 0;}
+	20%{opacity: 0;}
+	40%{opacity: 0;}
+	60%{opacity: 0;}
+	70%{opacity: 1;}
+	90%{opacity: 1;}
+	100%{opacity: 0;}
+}
+
+#body{
+	padding: 0px;
+	margin: 0px;
+	background-color:black;
+  
+}
+#outer_box{
+	
+	width: 100%;
+	height: 400px;
+	max-height: 100%;
+	max-width: 100%;
+	position: absolute;
+	z-index:1;
+	margin: auto;
+	top: 30px;
+	
+	
+}
+#log_close_button{
+	float: right;
+	padding: 10px;
+	cursor: pointer;
+	position: relative;
+	margin: -1px;
+	z-index: 500;
+}
+#inner_box{
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.85);	
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	position: relative;
+	z-index: 8;
+	top: 100px;
+	transition-property:opacity ;
+    transition-duration: .85s;
+	transition-iteration-time=1;
+	box-shadow: 0 0 20px 2.5px rgb(0,0,0);
+	transition-timing-function:ease-in-out;
+}
+.logIn{
+	
+	padding: 5px;
+	display: block;
+	position:relative;
+	margin:auto;
+	text-align: center;
+}
+}
+#centre {
+	position: fixed;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	
+}
+#title_main{
+ position: relative; 
+ top: 240px;
+ padding: 2px;
+ max-width: 100%;
+ text-align: center;
+ z-index: 2;
+}
+
+#title_main span:hover{
+	opacity: 0.9;
+	margin: 2px;
+	width: 71px;
+	height: 71px;
+	padding: 10px;
+	color: rgb(250, 250, 250);
+	font-size: 57px;
+	display: inline-block;
+	background-color: rgba(56, 56, 56, 0.59);
+    font-family: Poriet;
+    font-weight: normal;
+	box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	max-width: 100%;
+    font-size: 80px;
+    cursor: default;
+}
+@font-face{
+	font-family: Roboto;
+	src:url(Roboto-Regular.tff);
+	font-weight: 100;
+}
+@font-face{
+	font-family: Poriet;
+	src:url(poriet.ttf);
+	font-weight: 100;
+}
+#title_main span{
+    opacity: 0.9;
+	margin: 2px;
+	width: 10px;
+	height: 10px;
+	padding: 2px;
+	color: rgb(255, 255, 255);
+	font-size: 1px;
+	display: inline-block;
+	background-color: rgba(56, 56, 56, 0.79);
+    font-family: Poriet;
+    font-weight: normal;
+	box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	max-width: 100%;
+     text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.57) ;
+    transition-property:padding ;
+    transition-duration:.65s;
+    cursor: default;
+
+}
+#lowBar{
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	bottom: 0px;
+	display: inline-block;
+	transition-property:bottom;
+	transition-duration:0.5s;
+	transition-timing-function:ease-in-out;
+}
+#inLowBar{
+	background-color: white;
+	position: relative;
+	bottom: 0px;
+	width: 100px;
+	height: 100px;
+}
+#shake1{
+	animation-name:shakeit1;
+	animation-duration:.16s;
+	animation-iteration-count: infinite;
+}
+#shake2{
+	animation-name:shakeit2;
+	animation-duration:.16s;
+	animation-iteration-count: infinite;
+}
+#shake3{
+	animation-name:shakeit3;
+	animation-duration:.16s;
+	animation-iteration-count: infinite;
+}
+
+#main_img{
+	position: fixed;
+	margin: 0px;
+	padding: 0px;
+	z-index:-100;
+	
+	
+	
+}
+#main_img img{
+position: absolute;
+	margin: 0px;
+	padding: 0px;
+	z-index:-100;
+	
+}
+#img1{
+	 height: 900px;
+     width: 1400px;
+}
+#img2{
+    height: 900px;
+    width: 1400px;
+	animation-name:image12;
+	animation-duration:15s;
+	animation-iteration-count: infinite;
+}
+#img3{
+	height: 900px;
+    width: 1400px;
+	animation-name:image23;
+	animation-duration:15s;
+	animation-iteration-count: infinite;
+}
+#nav{
+	background-color:  rgba(49, 53, 56, 0.34) ;
+	margin: 0px;
+	padding: 0px;
+   position: fixed;
+   z-index: 1;
+   width: 100%;
+  max-width: 100%;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+#nav ul{
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	height: 37px;
+	margin-left: 50px;
+
+}
+#nav ul li{
+	
+	list-style-type: none;
+	float: left;
+	text-align: center;
+	display: inline-block;
+	max-width: 100%;
+	
+}
+#nav ul li a:hover,#nav ul li a:active{
+    
+    margin-top:3px; 
+    
+    color: white;
+
+
+    
+}
+#nav ul li a{
+	text-decoration: none;
+	font-size: 17px;
+	font-family: Poriet;
+	color: rgb(255, 255, 255)  ;
+	width: 90px;
+	margin: 0px;
+	padding:8px ;
+	display: inline-block;
+	text-align: center;
+	font-weight: normal;
+	
+	white-space: normal;
+	border-bottom: 0px ;
+	max-width: 100%
+	transition-property:all;
+	transition-duration:0.15s;
+	transition-time-curve:ease-out;
+	
+	
+}
