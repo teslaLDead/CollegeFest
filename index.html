@@ -34,17 +34,7 @@
   <ul>
   <li><a href="about2.html">About Us</a></li>
   <li><a href="eventHome.html" onclick="lowBarMove()">Events</a></li>
-  <?php 
-  if (isset($_SESSION['id'])) 
-   { echo "<li style=\"float:right;margin-right:5px;\"><a href=\"profile.php\" >Profile</a></li>";
-    }else
-      {echo "<li style=\"float:right;margin-right:5px;\"><a href=\"singup.php\" >Register</a></li>";}
-  if (isset($_SESSION['id'])) 
-    {echo "<li style=\"float:right;margin-right:5px;\"><a href=\"logou.php\" >Logout</a></li>";}
-  else
-   { echo "<li style=\"float:right;margin-right:5px;\"><a href=\"login.php\" >Login</a></li>";}
- 
-  ?>
+  
   </ul></div>
 <div id="centre">
 <div id="main_img">
